@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "grpc-with-kafka-demo"
+version = "1.0.0"
+description = ""
+authors = ["Rodolfo Olivieri <rodolfo.olivieri@nicht.rocks>"]
+
+[tool.poetry.dependencies]
+python = "3.7"
+grpcio = "^1.27.2"
+grpcio-tools = "^1.27.2"
+faust = {version = "^1.10.4", extras = ["uvloop,fast"]}
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.10.1"

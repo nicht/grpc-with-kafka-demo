@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "google/protobuf/struct.proto";
+
+// The greeting service definition.
+service Department {
+    // Sends a greeting
+    rpc Search (DepartmentRequest) returns (DepartmentReply) {}
+}
+
+// The request message containing the user's name.
+message DepartmentRequest {
+    string category_id = 1;
+}
+
+// The response message containing the greetings
+message DepartmentReply {
+    google.protobuf.Struct category_id = 1;
+}
