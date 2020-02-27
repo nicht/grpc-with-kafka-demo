@@ -1,3 +1,4 @@
 grpcio==1.27.2
 grpcio-tools==1.27.2
 faust[uvloop,fast]==1.10.4
+asyncio
